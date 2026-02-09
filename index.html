@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section: Welcome Card -->
+        <div class="welcome-card">
+            <div class="welcome-icon">
+                <svg class="cloud-icon" viewBox="0 0 100 100">
+                    <circle cx="45" cy="40" r="20" fill="#FFD700"/>
+                    <path d="M 20 60 Q 20 75 35 75 L 65 75 Q 80 75 80 60 Q 80 50 70 48 Q 65 35 55 35 Q 45 25 35 35 Q 25 35 20 45 Z" fill="white"/>
+                </svg>
+            </div>
+            <h1>Weather<br>Forecasts</h1>
+            <button class="get-started-btn">Get Start</button>
+            <p class="weather-subtitle">Check weather details</p>
+        </div>
+
+        <!-- Middle Section: Current Weather -->
+        <div class="weather-card">
+            <div class="location-header">
+                <span class="location-icon">📍</span>
+                <span class="location-text">Location</span>
+                <button class="location-btn">+</button>
+            </div>
+            
+            <div class="temperature-section">
+                <div class="temp-display">22°</div>
+                <div class="weather-status">Cloudy</div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-label">Humidity</span>
+                    <span class="detail-value">56%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Pressure</span>
+                    <span class="detail-value">28%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Wind Speed</span>
+                    <span class="detail-value">12 km/h</span>
+                </div>
+            </div>
+
+            <div class="forecast-chart">
+                <div class="chart-point"></div>
+                <div class="chart-point"></div>
+                <div class="chart-point"></div>
+                <div class="chart-point"></div>
+                <div class="chart-point"></div>
+                <div class="chart-point"></div>
+                <div class="chart-point"></div>
+                <div class="chart-point"></div>
+            </div>
+
+            <p class="forecast-label">7 Day Forecasts</p>
+
+            <div class="daily-forecast">
+                <div class="forecast-day active">
+                    <span class="day-icon">☁️</span>
+                </div>
+                <div class="forecast-day">
+                    <span class="day-icon">🌤️</span>
+                </div>
+                <div class="forecast-day">
+                    <span class="day-icon">⛅</span>
+                </div>
+                <div class="forecast-day">
+                    <span class="day-icon">🌦️</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Weather Icons -->
+        <div class="weather-icons-section">
+            <div class="icons-grid">
+                <div class="icon-item"><span>☀️</span></div>
+                <div class="icon-item"><span>🌙</span></div>
+                <div class="icon-item"><span>☁️</span></div>
+                <div class="icon-item"><span>🌤️</span></div>
+                <div class="icon-item"><span>🌤️</span></div>
+                <div class="icon-item"><span>⛅</span></div>
+                <div class="icon-item"><span>☁️</span></div>
+                <div class="icon-item"><span>☁️</span></div>
+                <div class="icon-item"><span>☁️</span></div>
+                <div class="icon-item"><span>🌦️</span></div>
+                <div class="icon-item"><span>🌧️</span></div>
+                <div class="icon-item"><span>⛈️</span></div>
+                <div class="icon-item"><span>☁️</span></div>
+                <div class="icon-item"><span>🌧️</span></div>
+                <div class="icon-item"><span>⛅</span></div>
+                <div class="icon-item"><span>❄️</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
